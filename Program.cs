@@ -34,7 +34,7 @@ namespace Business_Case
 
             StreamReader objReader = new StreamReader(objStream);
 
-            string jsonString = objReader.ReadToEnd();
+            objReader.ReadToEnd();
 
             List<Product> products = JsonSerializer.Deserialize<List<Product>>(jsonString);
 
